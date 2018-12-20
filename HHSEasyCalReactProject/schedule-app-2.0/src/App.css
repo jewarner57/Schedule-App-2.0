@@ -1,0 +1,261 @@
+
+/*Fonts and Text*/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+
+.amberText {
+    color:#ffd54f;
+}
+
+.grayText {
+    color:#E0E0E0;
+}
+
+.noBreakText {
+    white-space: nowrap;
+}
+
+/*Header*/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+    background-color: #2196f3;
+    color: #fff;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    padding: 15px 0 15px 0;
+    box-shadow: 0px 2px #000;
+    width: 100%;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*Countdown Timer*/
+.countdownTab {
+	display:flex;
+}
+
+.Tabs {
+	background-color: #2196f3 !important;
+}
+
+.tabSection {
+    
+    width:100%;
+    background-color:#303030;
+    color:white;
+    text-align: center;
+    padding: 25px 0 25px 0;
+    border-bottom: 2px solid #ffc107;
+
+}
+
+.tabSection h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.tabSection h1 {
+    font-size: 150px;
+    margin-top: 30px;
+    margin-bottom:60px;
+}
+
+@media only screen and (max-width: 600px) {
+    .tabSection h1 {
+        font-size: 100px;
+    }
+    .tabSection h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .tabSection h1 {
+        font-size: 80px;
+    }
+    .tabSection h2 {
+        font-size: 20px;
+    }
+}
+
+/*Schedule Picker*/
+.schedulePicker {
+    background-color: #2196f3;
+}
+
+.schedulePickerField {
+    text-align: center;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+
+.scheduleTitle {
+    margin:0;
+    padding:20px;
+    font-size: 18px;
+    color:white;
+}
+
+.scheduleListSection {
+    background-color:#303030;
+}
+
+.scheduleListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    border-bottom: 2px solid #ffc107; 
+}
+
+.scheduleList {
+    padding:10px 40px 10px 40px;
+    font-size: 30px;
+    color:white;
+}
+
+/*Twitter Pages*/
+.twitterPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width:100%;
+    background-color:#2196f3;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+/*Lunch Menu PDF*/
+.pdfSection {
+    background-color:#2196f3;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: flex;
+}
+
+.pdfdoc {
+    position: flex;
+}
+
+.pdfBackground {
+    width:100vw;
+    justify-content: center;
+    background-color: #303030; 
+    color:red;
+}
+
+.backgroundError {
+	align-items: center;
+}
+
+.openPdfButton {
+    
+    margin: 25px 0 25px 0;    
+	
+}
+
+.pdfButtonInnerContainer {
+		padding-top:25px;
+}
+
+.pdfButtonContainer {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+		color:white;
+    
+}
+
+.pdfButtonContainer p {
+    margin:25px;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;	
+}
+
+.loadingIcon {
+    margin-top:55px;
+    display: none;
+}
+
+.errorMessage {
+		color: #F44336;
+		font-weight: 500;
+		height: 30px;
+		text-decoration: none;
+		display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+	.errorMessage {
+		flex-direction: column
+	}
+}
+
+.lunchPDFErrorYellowHere {
+	color: #ffd54f;
+	text-decoration: none;
+	margin-left:8px;
+	
+	animation-name: linkHover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+/*animation for lunch pdf error link*/
+@keyframes linkHover {
+    0% {color: #ffd54f;}
+    50% {color: #FFB74D;}
+		100% {color: #ffd54f;}
+}
+
+.react-pdf__message--error {
+    margin-top:90px !important;
+}
+
+/*Footer*/
+.footer {
+    background-color: #303030;
+    padding:20px;
+    color:#C0C0C0;
+}
+
+
